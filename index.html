@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- <h1>URL Shortener</h1> -->
+
+  <form id="shortenForm">
+    <label for="shortenField">URL to shorten:</label>
+    <input type="text" id="shortenField" name="shortenField" placeholder="https://www.very-very-very-very-long-url.com"
+      required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <form id="ogShortForm">
+    <label for="originalFromShortCode">Find original URL from short URL:</label>
+    <span class="grey-text">https://nan0.azurewebsites.net/{shortCode}</span>
+    <input type="text" id="ogShort" name="originalFromShortCode" placeholder="shortCode here, e.g nan0" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <form id="customShorten">
+    <label for="originalUrl">Original URL:</label>
+    <input type="text" id="original" name="original" placeholder="https://www.very-very-very-very-long-url.com"
+      required>
+
+    <label for="shortUrl">Custom Short URL:</label>
+    <span class="grey-text">https://nan0.azurewebsites.net/{shortCode}</span>
+    <input type="text" id="shortUrl" name="shortUrl" placeholder="your custom shortCode here, e.g myproject" required>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="result">
+    <div id="title">Result:</div>
+    <div style="margin-top: 10px;">
+      <a href="" target="_blank" style="display: none;">Placeholder</a>
+      <div class="loader-container">
+        <div class="loader" style="display: none;"></div>
+      </div>
+      <p>No result yet.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
