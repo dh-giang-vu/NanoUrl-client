@@ -43,7 +43,7 @@ shortenForm.addEventListener("submit", async function (event) {
 
   try {
     // Send the POST request
-    const response = await fetch("https://nan0.azurewebsites.net/shorten", {
+    const response = await fetch("https://nan1.azurewebsites.net/shorten", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -80,7 +80,7 @@ ogShortForm.addEventListener("submit", async function (event) {
 
   try {
     // Send the POST request
-    const response = await fetch(`https://nan0.azurewebsites.net/get/${field.value}`, {
+    const response = await fetch(`https://nan1.azurewebsites.net/get/${field.value}`, {
       method: "GET"
     });
 
@@ -113,7 +113,7 @@ customForm.addEventListener("submit", async function (event) {
 
   try {
     // Send the POST request
-    const response = await fetch("https://nan0.azurewebsites.net/custom", {
+    const response = await fetch("https://nan1.azurewebsites.net/custom", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
